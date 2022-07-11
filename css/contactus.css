@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+} */
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    position: absolute;
+    top:0;
+    left:0;
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+    /* background-color: black; */
+    /* position: fixed; */
+}
+
+.nav-links{
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+
+.nav-links li{
+    margin : 0 30px;
+}
+
+/* body,html{
+    overflow-x: hidden;
+} */
+
+.menu-button{
+    position: absolute;
+    top:30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    /* height: 100%; */
+}
+
+.ctn {
+    padding: 8px 15px;
+    background:#fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.cntlogo img{
+    position: absolute;
+    top:50px;
+    left: 20px;
+    width: 120px;
+}
+
+
+@media (max-width:991px) {
+    .menu-button{
+        display: block;
+    }
+
+    .navbar{
+        padding:0;
+    }
+
+    .logo{
+        position:absolute;
+        top : 30px;
+        left : 30px;
+        display: none;
+    }
+
+    .cntlogo img{
+        position: absolute;
+        top:60px;
+        left: 40px;
+        width: 90px;
+        display: none;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        width : 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius:30% ;
+    }
+
+    .nav-links li{
+        margin: 30px auto;
+
+    }
+
+    body,html{
+        overflow-x: hidden;
+    }
+
+    .contact{
+        height: -100vh;
+        padding: 10px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+
+    .container .contactinfo,.contactform{
+        width: 100%;
+    }
+}
+
+li:hover{
+    background-color: whitesmoke;
+    color:#fc036b;
+    cursor: pointer;
+}

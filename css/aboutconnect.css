@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    position: absolute;
+    top:0;
+    left:0;
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: black;
+    /* position: fixed; */
+}
+
+.nav-links{
+    display: flex;
+    align-items:center;
+    list-style: none;
+}
+
+.nav-links li{
+    margin : 0 30px;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+.menu-button{
+    position: absolute;
+    top:30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    /* height: 100%; */
+}
+
+.ctn {
+    padding: 8px 15px;
+    background:#fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.cntlogo img{
+    position: absolute;
+    top:50px;
+    left: 20px;
+    width: 120px;
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+/* .content-section{
+    float: left;
+    width: 40%;
+} */
+
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+
+.content-creation .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.content-creation .content h3{
+    margin-top: 20px;
+    color:#5d5d5d;
+    font-size:21px;
+}
+
+.content-creation .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-creation .content .button{
+    margin-top: 30px;
+}
+
+.content-creation .content .button a{
+    background-color: #3d3d3d;
+    padding: 10px 35px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+}
+
+.content-creation .content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+
+.content-creation .social{
+    margin: 40px 40px;
+}
+
+.content-creation .social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.content-creation .social i:hover{
+    color: #3d3d3d;
+}
+
+
+#hide{
+    display: none;
+}
+
+@media only screen and (max-width:850px) {
+    .menu-button{
+        display: block;
+    }
+
+    .navbar{
+        padding:0;
+    }
+
+    .logo{
+        position:absolute;
+        top : 30px;
+        left : 30px;
+        display: none;
+    }
+
+    .cntlogo img{
+        position: absolute;
+        top:60px;
+        left: 40px;
+        width: 90px;
+        display: none;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        width : 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius:30% ;
+    }
+
+    .nav-links li{
+        margin: 30px auto;
+
+    }
+
+    body,html{
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .content-creation .title{
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .content-creation .content .button{
+        text-align: center;
+    }
+
+    .content-creation .content .button a{
+        padding: 9px 30px;
+    }
+
+    .content-creation .social{
+        text-align: center;
+    }
+}
+
+li:hover{
+    background-color: whitesmoke;
+    color:#fc036b;
+    cursor: pointer;
+}

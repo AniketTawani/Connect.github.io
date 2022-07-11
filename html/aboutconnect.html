@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Connect</title>
+    <link rel="stylesheet" href="../css/aboutconnect.css">
+    <link rel='icon' href="../img/logo7.png" type="imgage/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="cntlogo">
+            <h1 class="logo">CONNECT</h1>
+            <img src="../img/logo7.png" alt="Connect to resolve your query">
+        </div>
+        <ul class="nav-links">
+            <li class="ctn"><a href="index.html">Home</a></li>
+            <!-- <li><a href="#"></a>Tours</li> -->
+            <li class="ctn"><a href="explore.html">Explore</a></li>
+            <li class="ctn"><a href="aboutconnect.html">About Connect</a></li>
+            <!-- <li class="ctn"><a href="contactus.html">Contact Us</a></li> -->
+        </ul>
+        <img src="../img/m7.png" class="menu-button">
+    </nav>
+    <div class="section">
+        <div class="container">
+            <div class="content-creation">
+                <div class="title">
+                    <h1>About Connect</h1>
+                </div>
+                <div class="content">
+                    <h3>"CONNECT" is just not a website, it's more than that!</h3>
+                    <p>During my journey in Engineering, I faced one problem i.e. not having proper guidance from the
+                        correct people at the right time. This is the main reason which motivates me to build "CONNECT"
+                        for my fellow mates as well as for the juniors. Through "CONNECT" he/she can directly reach out
+                        to the industry person with whom he/she is willing to work, with the help of the Linkedin
+                        platform. (The link for the connection is provided by CONNECT itself) Because of "CONNECT" you
+                        can completely resolve your query related of any kind, for ex: It may be related to the
+                        academics, placements preparation and proper content for the preparation of DSA by reaching out
+                        for the help.
+                        <span id="hide">
+                            <p></p>
+                        </span>
+                    </p>
+                    <div class="button" id="button">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <!-- <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab Li-Linkedin-L"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a> -->
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="../img/logo7.png">
+        </div>
+    </div>
+    </div>
+    <script>
+        const menuBtn = document.querySelector('.menu-button')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+        const togglebtn = document.querySelector('#button');
+        const divlist = document.querySelector('#hide');
+        togglebtn.addEventListener('click', () => {
+            if (divlist.style.display == 'none') {
+                divlist.style.display = 'block';
+            }
+            else {
+                divlist.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
