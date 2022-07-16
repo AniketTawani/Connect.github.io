@@ -338,6 +338,11 @@ footer p{
         padding:10px;
     }
 
+    .change{
+        color: #7c7c7c;
+        padding: 0px 88px;
+    }
+
     /* .header-content h1{
         color: whitesmoke;
     } */
