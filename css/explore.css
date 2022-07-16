@@ -21,6 +21,7 @@ a{
     justify-content: space-between;
     padding: 20px;
     color: black;
+    margin-bottom: 100px;
     /* position: fixed; */
 }
 
@@ -40,8 +41,8 @@ body,html{
 
 .menu-button{
     position: absolute;
-    top:30px;
-    right: 30px;
+    top:18px;
+    right: 19px;
     width: 40px;
     cursor: pointer;
     display: none;
@@ -53,6 +54,7 @@ body,html{
     background:#fc036b;
     border-radius: 30px;
     color: whitesmoke;
+    margin-bottom: 10px;
 }
 
 .cntlogo img{
@@ -72,10 +74,11 @@ body{
 
 .container{
     /* background-image: url('../img/hd2.jpg'); */
+    margin-top: 38px;
     max-width: 700px;
     width: 100%;
     /* background: #fff; */
-    height: 500px;
+    height: 546px;
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
     padding: 25px 30px;
     border-radius: 5px;
@@ -111,9 +114,9 @@ body{
 } */
 
 form .user-details .input-box a{
-    margin-left: 30px;
+    margin-left: 32px;
     font-weight: 1000;
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .user-details .input-box h3{
@@ -133,6 +136,7 @@ form .user-details .input-box a{
     font-weight: 500;
     margin-bottom: 5px;
     display: block;
+    margin-left: 39px;
 }
 
 .user-details .input-box h3:focus,
@@ -145,12 +149,39 @@ form .user-details .input-box a{
     display: none;
 }
 
+.company{
+    /* position: absolute; */
+    display:flex;
+    justify-content: space-between;
+}
+
+.companylogo{
+    width: 250px;
+    /* margin-left: 100px; */
+}
+
+.new{
+    padding: 6px 28px;
+    background:linear-gradient(135deg, #71b7e6, #9b59b6);
+    border-radius: 30px;
+    color:black;
+    /* margin-bottom: 10px; */
+}
+
+/* .line {
+    width: 150px;
+    height: 4px;
+    background: darkblue;
+    margin: 10px auto;
+    border-radius: 5px;
+} */
+
 /* .user-details{
     overflow-y:scroll;
     overflow-x: hidden;
 } */
 
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:991px) {
 
     .user-details .input-box h3{
         font-size: 0.7rem;
@@ -223,8 +254,46 @@ form .user-details .input-box a{
 
 }
 
+@media only screen and (max-width:320px){
+    .line {
+        width: 150px;
+        height: 4px;
+        background: darkblue;
+        margin: 15px auto;
+        border-radius: 5px;
+    }
+
+    .user-details .input-box .details{
+        font-weight: 500;
+        margin-bottom: 5px;
+        display: block;
+        margin-left: 42px;
+    }
+
+
+    form .user-details .input-box a{
+        margin-left: 60px;
+        font-weight: 1000;
+        font-size: 17px;
+    }
+}
+
 li:hover{
     background-color: whitesmoke;
     color:#fc036b;
     cursor: pointer;
+}
+
+img{
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.ctn:hover{
+    background: whitesmoke;
+    color:black;
+    box-shadow: 2px 2px 5px #00000056;
 }
